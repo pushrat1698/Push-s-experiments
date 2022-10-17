@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thingy page</title>
+    <link rel="stylesheet" href="base.css">
+    <script>
+        var value = 0;
+        //Class stuff {
+
+        //Gst Calculator {
+  
+        function GST() {
+
+            var GST = prompt("Original Price:") * 1.15;
+      
+            alert ("The price of your item will be $" + GST + " with GST");
+        };
+       //}
+
+       //Times Table stuff {
+        function ttthing() {
+            var timesNum = prompt("what number you wanna times bruv?");
+            var noCalc = prompt("how many times u wanna times it bruv");
+            for(var i=1; i <= noCalc;i++) {
+            alert("Dis is your answer bruv : " + i + " x " + timesNum + " = " + (i*timesNum));
+            }
+        }
+
+        function ttthing2(){
+            for (var i = 1; i < 10; i++) {
+                for (var j = 1; j < 10; j++) {
+                   alert("Timestables: " + i*j) 
+                }
+        }
+        }
+        //}
+
+        //Welcome {
+        function Welcome(){ var name = prompt("What is your name?");
+            for (var welc = 1; welc < 10; welc++) {  
+                alert("Welcome to my webpage " + name + "!")
+        }
+        }
+        //}
+
+        //Arrays {
+        function potato (){
+            var potat = Number(prompt("Pick a number between 1 and 5"));
+                coral=["not an option smh", "You chose the right number!", "Oop, wrong sorry", "Nope", "HAH...no", "Sorry, it was wrong"]
+                alert(coral[potat])
+
+        }
+        //}}
+
+        //Fav Color
+
+        //Quirky random stuff idk im bored :')'
+
+
+        //Clicker Game
+        function incrementValue()
+{
+             value++;
+             document.getElementById('number').innerHTML = value;
+}
+
+        function reseet()
+        {
+                    value = 0;
+                    document.getElementById('number').innerHTML = value;
+        }
+        //}
+        ceral=[0,0,0,0,0]
+        function poeee()
+        {
+            
+            ceral[1]++
+            alert(ceral[1])
+        }
+
+        function HEY() {
+            alert("HEY");
+            alert("GET OUTTA MY SAMWIDGE");
+            var no = prompt()
+        }
+        //<button onclick="" class="grow">TEST</button>
+    </script>
+</head>
+<body>
+    <ul class="menulist">
+        <li class="menulisti grow"><a class="menulistilink" href="\\fs1\studentdata$\evanoconnor\Documents\T3\HTML\JavaScript\school.html">Home</a></li>
+        <li class="menulisti grow"><a class="menulistilink" href="\\fs1\studentdata$\evanoconnor\Documents\T3\HTML\JavaScript\Universal Paperclips\Universal paperclips\index.html">Universal Potatoes</a></li>
+        <li class="menulisti grow"><a class="menulistilink" href="">Dinosaur Game</a></li>
+        <li class="menulisti grow"><a class="menulistilink" href="about:blank">Unused</a></li>
+    </ul>
+    <div class="container">
+           
+        <div class="center">
+            <br>
+            <Button onclick="HEY"></Button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button onclick="GST()" class="Calc grow">Click here to calculate GST</button>
+            <br>
+            <br>
+            <br>
+            <button onclick="ttthing()" class="grow">TT Thingy</button>
+            <br>
+            <br>
+            <br>
+            <button onclick="ttthing2()" class="grow">TT Thingy 2</button>
+            <br>
+            <br>
+            <br>   
+            <button onclick="Welcome()" class="grow">Name?</button>
+            <br>
+            <br>
+            <br> 
+            <button onclick="potato()" class="grow">Wheel of truuth</button>
+            <br>
+            <br>
+            <br> 
+            <h1>CLICKER GAME</h1>
+            <p id="number"></p>
+            <form>
+            
+                <input type="button" onclick="incrementValue()" class="grow" value="Click Me!" />
+                <input type="button" onclick="reseet()" class="grow" value="RESET" />
+            </form>
+            <button onclick="poeee()" class="grow">Wheel oeeee</button>
+         </div>
+    </div>
+</body>
+</html>
